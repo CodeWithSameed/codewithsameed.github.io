@@ -6,235 +6,238 @@
     <title>Sameed Ahmad Sharief - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        /* Global Styles */
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: white;
-            background: url('iioi.webp') no-repeat center center fixed;
-            background-size: cover;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
+ /* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: white;
+  background: url('iioi.webp') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh; /* Use min-height for better adaptability */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-        h1, h2 {
-            font-family: 'Poppins', sans-serif;
-            color :aliceblue;
-        }
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+  color: aliceblue;
+}
 
-        /* Header */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 40px 20px;
-            max-width: 100%;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-        }
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; /* Reduced padding for smaller screens */
+  max-width: 960px; /* Added max-width for better centering */
+  margin: 0 auto;
+  z-index: 1000;
+}
 
-        header h1 {
-            font-size: 48px;
-            margin: 0;
-        }
+header h1 {
+  font-size: 2.5rem; /* Use rem units for better responsiveness */
+  margin: 0;
+}
 
-        header p {
-            font-size: 20px;
-            margin-top: 10px;
-        }
+header p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
 
-        header img {
-            width: 80px; /* Adjust logo size */
-            height: auto;
-        }
+header img {
+  width: 60px; /* Adjusted logo size */
+  height: auto;
+}
 
-        /* Navigation */
-        nav {
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-        }
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Use gap for consistent spacing */
+  padding: 1rem 0;
+}
 
-        nav a {
-            color: #fff;
-            padding: 12px 25px;
-            text-decoration: none;
-            text-align: center;
-            font-weight: 600;
-            transition: background-color 0.3s ease;
-        }
+nav a {
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
 
-        nav a:hover {
-            background-color: #f39c12;
-        }
+nav a:hover {
+  background-color: #f39c12;
+}
 
-        /* Sections */
-        section {
-            padding: 60px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+/* Sections */
+section {
+  padding: 4rem 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
 
-        h2 {
-            font-size: 36px;
-            margin-bottom: 40px;
-            text-align: center;
-        }
+h2 {
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
 
-        /* Projects */
-        .project {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            justify-content: center;
-        }
+/* Projects */
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
 
-        .project div {
-            background-color: rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            overflow: hidden;
-            width: 300px;
-            text-align: center;
-        }
+.project div {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  flex-basis: calc(33.33% - 1rem); /* Calculate width for 3 columns */
+  margin: 0 1rem; /* Add margins for consistent spacing */
+  text-align: center;
+}
 
-        .project img {
-            width: 100%;
-            height: auto;
-            border-bottom: 2px solid #ddd;
-        }
+.project img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #ddd;
+}
 
-        .project h3 {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-            margin: 20px 0;
-        }
+.project h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin: 1.5rem 0;
+}
 
-        .project p {
-            padding: 0 20px;
-            font-size: 16px;
-        }
+.project p {
+  padding: 0 1.5rem;
+  font-size: 1rem;
+}
 
-        .project a {
-            display: inline-block;
-            margin: 20px 0;
-            padding: 10px 20px;
-            background-color: #f39c12;
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            border-radius: 5px;
-        }
+.project a {
+  display: inline-block;
+  margin: 1.5rem 0;
+  padding: 0.75rem 1.5rem;
+  background-color: #f39c12;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+}
 
-        .project a:hover {
-            background-color: #e67e22;
-        }
+.project a:hover {
+  background-color: #e67e22;
+}
 
-        /* Skills */
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
+/* Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
 
-        .skills div {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            width: 200px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-        }
+.skills div {
+  background-color: #333;
+  color: white;
+  padding: 1.5rem;
+  flex-basis: calc(33.33% - 1rem);
+  margin: 0 1rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
 
-        /* Contact */
-        .contact {
-            text-align: center;
-            padding: 40px;
-            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for contrast */
-            color: white;
-        }
+/* Contact */
+.contact {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
 
-        .contact a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 20px;
-            padding: 15px 30px;
-            background-color: #f39c12;
-            border-radius: 5px;
-            font-weight: 600;
-        }
+.contact a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
+  background-color: #f39c12;
+  border-radius: 5px;
+  font-weight: 600;
+}
 
-        .contact a:hover {
-            background-color: #e67e22;
-        }
+.contact a:hover {
+  background-color: #e67e22;
+}
 
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: white;
-        }
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
 
-        /* Media Queries for Responsiveness */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 36px;
-            }
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
 
-            header p {
-                font-size: 18px;
-            }
+  header p {
+    font-size: 0.9rem;
+  }
 
-            nav {
-                flex-direction: column;
-                align-items: center;
-            }
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
 
-            .project div {
-                width: 100%;
-            }
+  .project div {
+    flex-basis: calc(50% - 1rem); /* Change to 2 columns */
+  }
 
-            .skills div {
-                width: 100%;
-                margin: 10px 0;
-            }
+  .skills div {
+    flex-basis: calc(50% - 1rem);
+    margin: 1rem 0;
+  }
 
-            .skills {
-                flex-direction: column;
-            }
-        }
+  .skills {
+    flex-direction: column;
+  }
+}
 
-        @media (max-width: 480px) {
-            nav a {
-                padding: 10px 15px;
-                font-size: 14px;
-            }
+@media (max-width: 480px) {
+  nav a {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
 
-            section {
-                padding: 40px 15px;
-            }
+  section {
+    padding: 3rem 1.5rem;
+  }
 
-            h2 {
-                font-size: 28px;
-            }
+  h2 {
+    font-size: 1.8rem;
+  }
 
-            header h1 {
-                font-size: 30px;
-            }
+  header h1 {
+    font-size: 1.8rem;
+  }
 
-            header p {
-                font-size: 16px;
-            }
-        }
+  header p {
+    font-size: 0.8rem;
+  }
+}
+  
 
+  
     </style>
 </head>
 <body>
